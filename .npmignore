@@ -1,0 +1,9 @@
+src/**
+examples-vanilla-js/**
+examples-es6/**
+demo.gif
+webpack.config.js
+.eslintrc
+.eslintignore
+.babelrc
+.npmignore

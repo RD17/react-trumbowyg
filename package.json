@@ -1,0 +1,40 @@
+{
+  "name": "react-trumbowyg",
+  "version": "0.0.1",
+  "description": "React wrapper for Trumbowyg",
+  "main": "dist/react-trumbowyg.js",
+  "scripts": {
+    "build": "set NODE_ENV='production' && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@vs1019:/home/git/trumbowyg.git"
+  },
+  "keywords": [
+    "Trumbowyg",
+    "editor",
+    "WYSIWYG",
+    "react"
+  ],
+  "author": "RD17",
+  "license": "MIT",
+  "dependencies": {   
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "trumbowyg": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "clean-webpack-plugin": "^0.1.13",
+    "copy-webpack-plugin": "^4.0.0",
+    "eslint": "^3.9.1",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "svg-inline-loader": "^0.7.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3"
+  }
+}
