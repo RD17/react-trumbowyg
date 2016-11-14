@@ -1,6 +1,6 @@
 {
   "name": "react-trumbowyg",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "React wrapper for Trumbowyg",
   "main": "dist/react-trumbowyg.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@vs1019:/home/git/trumbowyg.git"
+    "url": "git@github.com:RD17/react-trumbowyg.git"
   },
   "keywords": [
     "Trumbowyg",
@@ -18,7 +18,7 @@
   ],
   "author": "RD17",
   "license": "MIT",
-  "dependencies": {   
+  "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "trumbowyg": "^2.3.0"
