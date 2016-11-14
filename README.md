@@ -1,5 +1,7 @@
 # React-Trumbowyg
 
+[![npm version](https://badge.fury.io/js/react-trumbowyg.svg)](https://badge.fury.io/js/react-trumbowyg)
+
 React wrapper for [trumbowyg](https://alex-d.github.io/Trumbowyg/ "trumbowyg").
 
 :star2: If you :heart: library, please star it! :star2: 
