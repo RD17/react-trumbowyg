@@ -4,7 +4,7 @@
 
 React wrapper for [trumbowyg](https://alex-d.github.io/Trumbowyg/ "trumbowyg").
 
-:star2: If you :heart: library, please star it! :star2: 
+If you :heart: library, please star it and upvote it on [awesome-react-components](http://devarchy.com/react-components)
 
 ![Demo](demo.gif)
 
