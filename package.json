@@ -1,18 +1,40 @@
 {
-  "name": "less-pass-native",
-  "version": "0.0.0",
-  "description": "Hello Exponent!",
-  "author": "Ilya P",
-  "private": true,
-  "main": "main.js",
+  "name": "react-trumbowyg",
+  "version": "1.1.0",
+  "description": "React wrapper for Trumbowyg",
+  "main": "dist/react-trumbowyg.js",
+  "scripts": {
+    "build": "set NODE_ENV='production' && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RD17/react-trumbowyg.git"
+  },
+  "keywords": [
+    "Trumbowyg",
+    "editor",
+    "WYSIWYG",
+    "react"
+  ],
+  "author": "RD17",
+  "license": "MIT",
   "dependencies": {
-    "@exponent/vector-icons": "~2.0.3",
-    "big-integer": "^1.6.17",
-    "crypto-js": "^3.1.8",
-    "exponent": "~11.0.2",
-    "next-frame": "^0.2.3",
-    "react": "~15.3.2",
-    "react-native": "git+https://github.com/exponentjs/react-native#sdk-11.0.3",
-    "react-native-elements": "^0.6.3"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "trumbowyg": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "clean-webpack-plugin": "^0.1.13",
+    "copy-webpack-plugin": "^4.0.0",
+    "eslint": "^3.9.1",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "svg-inline-loader": "^0.7.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3"
   }
 }
