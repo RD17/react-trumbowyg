@@ -42,7 +42,7 @@ React-Trumbowyg depends on Trymbowyg only.
 
 Trumbowyg requires some setup procedures before you can use it. 
 
-1. First of all, you need to install jQuery  
+First of all, you need to install jQuery  
 
 ```
 > npm i jquery --save
@@ -59,12 +59,14 @@ new webpack.ProvidePlugin({
 }) 
 ```
 
-2. Secondly, you need to add Trymbowyg styles
+Secondly, you need to add Trymbowyg styles
+
 ```
 import 'react-trumbowyg/dist/trumbowyg.min.css'
 ```
 
-3. Finally, import React-Trymbowyg component
+Finally, import React-Trymbowyg component
+
 ```
 import Trumbowyg from 'react-trumbowyg'
 
