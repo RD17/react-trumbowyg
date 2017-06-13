@@ -18,6 +18,7 @@ If you :heart: library, please star it and upvote it on [awesome-react-component
   - [Trumbowyg properties](#trumbowyg-properties)
   - [Self properties](#self-properties)
   - [Event handlers](#event-handlers)
+- [Plugins](#plugins)
 - [Contributors](#contributors)
 - [License](#license)
 
@@ -114,6 +115,53 @@ React-Trumbowyg expose all properties of Trumbowyg, and adds self as well
  * onOpenFullScreen - Switch to fullscreen mode
  * onCloseFullScreen - Leave editor's fullscreen mode
  * onClose - Close the editor
+
+# Plugins
+
+Thanks @ashleydb, for such a nice example:
+
+> It does work today. It may not look pretty, but it works. For example, I needed to add the tables plugin:
+
+```javascript
+
+import React from 'react';
+
+import Trumbowyg from 'react-trumbowyg';
+// ADD THIS LINE. ADJUST THE BEGINNING OF THE PATH AS NEEDED FOR YOUR PROJECT
+import '../../node_modules/trumbowyg/dist/plugins/table/trumbowyg.table';
+
+export default class MyComponent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div>
+                    <Trumbowyg id='react-trumbowyg'
+                        buttons={
+                            [
+                                ['viewHTML'],
+                                ['formatting'],
+                                'btnGrp-semantic',
+                                ['link'],
+                                ['insertImage'],
+                                'btnGrp-justify',
+                                'btnGrp-lists',
+                                ['table'], // I ADDED THIS FOR THE TABLE PLUGIN BUTTON
+                                ['fullscreen']
+                            ]
+                        }
+                        data={this.props.someData}
+                        placeholder='Type your text!'
+                        onChange={this.props.someCallback}
+                        ref="trumbowyg"
+                    />
+            </div>
+        );
+    }
+}
+```
+
 
 # Contributors
 * [Ilya P](http://sochix.ru) - Trumbowyg wrapper component
