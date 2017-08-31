@@ -34,7 +34,8 @@ class Trumbowyg extends Component {
       onClose,
       shouldUseSvgIcons,
       shouldInjectSvgIcons,
-      svgIconsPath
+      svgIconsPath,
+      btnsDef
     } = this.props
 
     if (shouldInjectSvgIcons && $(`#${trumbowygIconsId}`).length === 0) {
@@ -44,6 +45,7 @@ class Trumbowyg extends Component {
     const trumbowygInstance = $(`#${id}`)
       .trumbowyg({
         btns: buttons,
+        btnsDef: btnsDef,
         semantic: semantic,
         resetCss: resetCss,
         removeformatPasted: removeformatPasted,
@@ -68,7 +70,7 @@ class Trumbowyg extends Component {
     if (onChange) {
       trumbowygInstance.on('tbwchange', onChange)
     }
-   
+
     if (onResize) {
       trumbowygInstance.on('tbwresize', onResize)
     }
@@ -141,7 +143,7 @@ Trumbowyg.defaultProps = {
   removeformatPasted: false,
   autogrow: false,
   disabled: false,
-
+  btnsDef: {},
   shouldUseSvgIcons: true,
   shouldInjectSvgIcons: true
 }
@@ -156,7 +158,7 @@ Trumbowyg.propTypes = {
   removeformatPasted: PropTypes.bool,
   autogrow: PropTypes.bool,
   disabled: PropTypes.bool,
-
+  btnsDef: PropTypes.object,
   //event handlers
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
