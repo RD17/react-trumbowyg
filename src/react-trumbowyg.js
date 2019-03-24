@@ -36,7 +36,8 @@ class Trumbowyg extends Component {
       shouldUseSvgIcons,
       shouldInjectSvgIcons,
       svgIconsPath,
-      btnsDef
+      btnsDef,
+      plugins
     } = this.props
 
     if (shouldInjectSvgIcons && $(`#${trumbowygIconsId}`).length === 0) {
@@ -52,6 +53,7 @@ class Trumbowyg extends Component {
         resetCss: resetCss,
         removeformatPasted: removeformatPasted,
         autogrow: autogrow,
+        plugins: plugins,
         svgPath: shouldUseSvgIcons
           ? shouldInjectSvgIcons ? '' : svgIconsPath
           : false
@@ -147,7 +149,8 @@ Trumbowyg.defaultProps = {
   disabled: false,
   btnsDef: {},
   shouldUseSvgIcons: true,
-  shouldInjectSvgIcons: true
+  shouldInjectSvgIcons: true,
+  plugins: {}
 }
 
 Trumbowyg.propTypes = {
@@ -174,7 +177,8 @@ Trumbowyg.propTypes = {
 
   shouldUseSvgIcons: PropTypes.bool.isRequired,
   svgIconsPath: PropTypes.string,
-  shouldInjectSvgIcons: PropTypes.bool.isRequired
+  shouldInjectSvgIcons: PropTypes.bool.isRequired,
+  plugins: PropTypes.object
 }
 
 export default Trumbowyg
