@@ -162,6 +162,46 @@ export default class MyComponent extends React.Component {
 }
 ```
 
+# Example 1
+
+Add an upload front-end allowing users to select an image, upload it with progress bar and then insert the uploaded image in the editor:
+
+```javascript
+import React from 'react'
+import Trumbowyg from 'react-trumbowyg'
+import 'trumbowyg/dist/plugins/upload/trumbowyg.upload.min.js'
+
+export default class MyComponent extends React.Component {
+	render() {
+		return (
+			<div>
+				<Trumbowyg
+					id='react-trumbowyg'
+					buttons={
+						[
+							['upload']
+						]
+					}
+					ref="trumbowyg"
+					plugins={
+						{
+							upload: {
+								serverPath: 'https://api.imgur.com/3/image',
+								fileFieldName: 'image',
+								headers: {
+									'Authorization': 'Client-ID ******'
+								},
+								urlPropertyName: 'data.link'
+							}
+						}
+					}
+				/>
+			</div>
+		)
+	}
+}
+```
+
 
 # Contributors
 * [Ilya P](http://sochix.ru) - Trumbowyg wrapper component
