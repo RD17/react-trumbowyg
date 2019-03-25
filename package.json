@@ -4,6 +4,7 @@
   "description": "React wrapper for Trumbowyg",
   "main": "dist/react-trumbowyg.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "set NODE_ENV='production' && webpack -p"
   },
   "repository": {
