@@ -1,6 +1,6 @@
 {
   "name": "react-trumbowyg",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React wrapper for Trumbowyg",
   "main": "dist/react-trumbowyg.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "trumbowyg": "^2.3.0"
+    "trumbowyg": "^2.25.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.0",
